@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainwindow</class>
+ <widget class="QMainWindow" name="mainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>651</width>
+    <height>516</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>mainwindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="registerPB">
+    <property name="geometry">
+     <rect>
+      <x>149</x>
+      <y>180</y>
+      <width>351</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ثبت نام</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loginPB">
+    <property name="geometry">
+     <rect>
+      <x>149</x>
+      <y>210</y>
+      <width>351</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ورود</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="teachingPB">
+    <property name="geometry">
+     <rect>
+      <x>149</x>
+      <y>240</y>
+      <width>351</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>آموزش</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="doctorsPB">
+    <property name="geometry">
+     <rect>
+      <x>149</x>
+      <y>270</y>
+      <width>351</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>پزشکان</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="servicesPB">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>300</y>
+      <width>351</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>امکانات و خدمات بیمارستان</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="welcomeLabel">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>50</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>به سامانه ی بیمارستان خوش آمدید</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <property name="indent">
+     <number>0</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>651</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuexit">
+    <property name="title">
+     <string>exit</string>
+    </property>
+   </widget>
+   <addaction name="menuexit"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
