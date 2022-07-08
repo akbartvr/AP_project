@@ -25,12 +25,12 @@ class Ui_Dialog_Login
 public:
     QHBoxLayout *horizontalLayout;
     QGridLayout *grl;
-    QPushButton *pushButton;
-    QLineEdit *lineEdit_2;
-    QLabel *label_2;
-    QLineEdit *lineEdit;
-    QLabel *label;
-    QPushButton *pushButton_2;
+    QPushButton *okPB;
+    QLineEdit *ledPass;
+    QLabel *lblPass;
+    QLabel *lblUser;
+    QPushButton *forgetPassPB;
+    QLineEdit *ledUser;
 
     void setupUi(QDialog *Dialog_Login)
     {
@@ -43,51 +43,51 @@ public:
         grl = new QGridLayout();
         grl->setObjectName(QString::fromUtf8("grl"));
         grl->setSizeConstraint(QLayout::SetDefaultConstraint);
-        pushButton = new QPushButton(Dialog_Login);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        okPB = new QPushButton(Dialog_Login);
+        okPB->setObjectName(QString::fromUtf8("okPB"));
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
-        pushButton->setSizePolicy(sizePolicy);
-        pushButton->setMaximumSize(QSize(200, 35));
-        pushButton->setLayoutDirection(Qt::RightToLeft);
+        sizePolicy.setHeightForWidth(okPB->sizePolicy().hasHeightForWidth());
+        okPB->setSizePolicy(sizePolicy);
+        okPB->setMaximumSize(QSize(200, 35));
+        okPB->setLayoutDirection(Qt::RightToLeft);
 
-        grl->addWidget(pushButton, 2, 1, 1, 1);
+        grl->addWidget(okPB, 2, 1, 1, 1);
 
-        lineEdit_2 = new QLineEdit(Dialog_Login);
-        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
-        lineEdit_2->setEchoMode(QLineEdit::Password);
-        lineEdit_2->setClearButtonEnabled(true);
+        ledPass = new QLineEdit(Dialog_Login);
+        ledPass->setObjectName(QString::fromUtf8("ledPass"));
+        ledPass->setEchoMode(QLineEdit::Password);
+        ledPass->setClearButtonEnabled(true);
 
-        grl->addWidget(lineEdit_2, 1, 1, 1, 1);
+        grl->addWidget(ledPass, 1, 1, 1, 1);
 
-        label_2 = new QLabel(Dialog_Login);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        lblPass = new QLabel(Dialog_Login);
+        lblPass->setObjectName(QString::fromUtf8("lblPass"));
 
-        grl->addWidget(label_2, 1, 0, 1, 1);
+        grl->addWidget(lblPass, 1, 0, 1, 1);
 
-        lineEdit = new QLineEdit(Dialog_Login);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setClearButtonEnabled(true);
+        lblUser = new QLabel(Dialog_Login);
+        lblUser->setObjectName(QString::fromUtf8("lblUser"));
 
-        grl->addWidget(lineEdit, 0, 1, 1, 1);
+        grl->addWidget(lblUser, 0, 0, 1, 1);
 
-        label = new QLabel(Dialog_Login);
-        label->setObjectName(QString::fromUtf8("label"));
-
-        grl->addWidget(label, 0, 0, 1, 1);
-
-        pushButton_2 = new QPushButton(Dialog_Login);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        forgetPassPB = new QPushButton(Dialog_Login);
+        forgetPassPB->setObjectName(QString::fromUtf8("forgetPassPB"));
         QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(pushButton_2->sizePolicy().hasHeightForWidth());
-        pushButton_2->setSizePolicy(sizePolicy1);
-        pushButton_2->setMaximumSize(QSize(1000, 35));
+        sizePolicy1.setHeightForWidth(forgetPassPB->sizePolicy().hasHeightForWidth());
+        forgetPassPB->setSizePolicy(sizePolicy1);
+        forgetPassPB->setMaximumSize(QSize(1000, 35));
 
-        grl->addWidget(pushButton_2, 3, 0, 1, 1);
+        grl->addWidget(forgetPassPB, 3, 0, 1, 1);
+
+        ledUser = new QLineEdit(Dialog_Login);
+        ledUser->setObjectName(QString::fromUtf8("ledUser"));
+        ledUser->setClearButtonEnabled(true);
+
+        grl->addWidget(ledUser, 0, 1, 1, 1);
 
 
         horizontalLayout->addLayout(grl);
@@ -101,12 +101,12 @@ public:
     void retranslateUi(QDialog *Dialog_Login)
     {
         Dialog_Login->setWindowTitle(QCoreApplication::translate("Dialog_Login", "Dialog", nullptr));
-        pushButton->setText(QCoreApplication::translate("Dialog_Login", "Ok", nullptr));
-        lineEdit_2->setPlaceholderText(QCoreApplication::translate("Dialog_Login", "\330\261\331\205\330\262 \330\271\330\250\331\210\330\261", nullptr));
-        label_2->setText(QCoreApplication::translate("Dialog_Login", "PASSWORD :", nullptr));
-        lineEdit->setPlaceholderText(QCoreApplication::translate("Dialog_Login", "\331\206\330\247\331\205\342\200\214\332\251\330\247\330\261\330\250\330\261\333\214", nullptr));
-        label->setText(QCoreApplication::translate("Dialog_Login", "USERNAME :", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Dialog_Login", "Forgot Password?", nullptr));
+        okPB->setText(QCoreApplication::translate("Dialog_Login", "Ok", nullptr));
+        ledPass->setPlaceholderText(QCoreApplication::translate("Dialog_Login", "\330\261\331\205\330\262 \330\271\330\250\331\210\330\261", nullptr));
+        lblPass->setText(QCoreApplication::translate("Dialog_Login", "PASSWORD :", nullptr));
+        lblUser->setText(QCoreApplication::translate("Dialog_Login", "USERNAME :", nullptr));
+        forgetPassPB->setText(QCoreApplication::translate("Dialog_Login", "Forgot Password?", nullptr));
+        ledUser->setPlaceholderText(QCoreApplication::translate("Dialog_Login", "\331\206\330\247\331\205\342\200\214\332\251\330\247\330\261\330\250\330\261\333\214", nullptr));
     } // retranslateUi
 
 };

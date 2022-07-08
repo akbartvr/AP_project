@@ -10,6 +10,9 @@ CONFIG += c++17
 
 SOURCES += \
     dialog_login.cpp \
+    doctors.cpp \
+    doctorsintroduction.cpp \
+    doctorsschedule.cpp \
     learningsection.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -17,12 +20,18 @@ SOURCES += \
 
 HEADERS += \
     dialog_login.h \
+    doctors.h \
+    doctorsintroduction.h \
+    doctorsschedule.h \
     learningsection.h \
     mainwindow.h \
     registeration_form.h
 
 FORMS += \
     dialog_login.ui \
+    doctors.ui \
+    doctorsintroduction.ui \
+    doctorsschedule.ui \
     learningsection.ui \
     mainwindow.ui \
     register_form.ui \

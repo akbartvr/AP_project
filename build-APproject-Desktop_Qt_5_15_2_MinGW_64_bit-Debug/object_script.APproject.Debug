@@ -1,0 +1,15 @@
+debug/dialog_login.o
+debug/doctors.o
+debug/doctorsintroduction.o
+debug/doctorsschedule.o
+debug/learningsection.o
+debug/main.o
+debug/mainwindow.o
+debug/registeration_form.o
+debug/moc_dialog_login.o
+debug/moc_doctors.o
+debug/moc_doctorsintroduction.o
+debug/moc_doctorsschedule.o
+debug/moc_learningsection.o
+debug/moc_mainwindow.o
+debug/moc_registeration_form.o

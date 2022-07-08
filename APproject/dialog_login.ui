@@ -23,7 +23,7 @@
       <enum>QLayout::SetDefaultConstraint</enum>
      </property>
      <item row="2" column="1">
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="okPB">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -45,7 +45,7 @@
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLineEdit" name="lineEdit_2">
+      <widget class="QLineEdit" name="ledPass">
        <property name="echoMode">
         <enum>QLineEdit::Password</enum>
        </property>
@@ -58,31 +58,21 @@
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="lblPass">
        <property name="text">
         <string>PASSWORD :</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
-      <widget class="QLineEdit" name="lineEdit">
-       <property name="placeholderText">
-        <string>نام‌کاربری</string>
-       </property>
-       <property name="clearButtonEnabled">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
      <item row="0" column="0">
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="lblUser">
        <property name="text">
         <string>USERNAME :</string>
        </property>
       </widget>
      </item>
      <item row="3" column="0">
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="forgetPassPB">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -97,6 +87,16 @@
        </property>
        <property name="text">
         <string>Forgot Password?</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="ledUser">
+       <property name="placeholderText">
+        <string>نام‌کاربری</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
        </property>
       </widget>
      </item>

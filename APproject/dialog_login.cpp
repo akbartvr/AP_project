@@ -7,7 +7,12 @@ Dialog_Login::Dialog_Login(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setWindowTitle("Login");
-
+    ui->lblUser->setStyleSheet("QLabel { color : goldenrod; }");
+    ui->lblPass->setStyleSheet("QLabel { color : goldenrod; }");
+    ui->ledUser->setStyleSheet("QLineEdit {  background-color: darkblue ; color : yellow; }");
+    ui->ledPass->setStyleSheet("QLineEdit {  background-color: darkblue ; color : yellow; }");
+    ui->okPB->setStyleSheet("QPushButton { background-color: darkblue ; color : gold; }");
+    ui->forgetPassPB->setStyleSheet("QPushButton { background-color: darkblue ; color : red; }");
 }
 
 Dialog_Login::~Dialog_Login()

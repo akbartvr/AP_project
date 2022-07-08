@@ -1,0 +1,15 @@
+release/dialog_login.o
+release/doctors.o
+release/doctorsintroduction.o
+release/doctorsschedule.o
+release/learningsection.o
+release/main.o
+release/mainwindow.o
+release/registeration_form.o
+release/moc_dialog_login.o
+release/moc_doctors.o
+release/moc_doctorsintroduction.o
+release/moc_doctorsschedule.o
+release/moc_learningsection.o
+release/moc_mainwindow.o
+release/moc_registeration_form.o

@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_mainwindow_t {
     QByteArrayData data[5];
-    char stringdata0[75];
+    char stringdata0[74];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -36,11 +36,11 @@ QT_MOC_LITERAL(0, 0, 10), // "mainwindow"
 QT_MOC_LITERAL(1, 11, 18), // "on_loginPB_clicked"
 QT_MOC_LITERAL(2, 30, 0), // ""
 QT_MOC_LITERAL(3, 31, 21), // "on_registerPB_clicked"
-QT_MOC_LITERAL(4, 53, 21) // "on_teachingPB_clicked"
+QT_MOC_LITERAL(4, 53, 20) // "on_doctorsPB_clicked"
 
     },
     "mainwindow\0on_loginPB_clicked\0\0"
-    "on_registerPB_clicked\0on_teachingPB_clicked"
+    "on_registerPB_clicked\0on_doctorsPB_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -78,7 +78,7 @@ void mainwindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->on_loginPB_clicked(); break;
         case 1: _t->on_registerPB_clicked(); break;
-        case 2: _t->on_teachingPB_clicked(); break;
+        case 2: _t->on_doctorsPB_clicked(); break;
         default: ;
         }
     }

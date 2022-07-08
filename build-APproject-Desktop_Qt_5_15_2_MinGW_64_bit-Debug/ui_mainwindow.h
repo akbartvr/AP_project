@@ -27,7 +27,6 @@ public:
     QWidget *centralwidget;
     QPushButton *registerPB;
     QPushButton *loginPB;
-    QPushButton *teachingPB;
     QPushButton *doctorsPB;
     QPushButton *servicesPB;
     QLabel *welcomeLabel;
@@ -47,15 +46,12 @@ public:
         loginPB = new QPushButton(centralwidget);
         loginPB->setObjectName(QString::fromUtf8("loginPB"));
         loginPB->setGeometry(QRect(149, 210, 351, 24));
-        teachingPB = new QPushButton(centralwidget);
-        teachingPB->setObjectName(QString::fromUtf8("teachingPB"));
-        teachingPB->setGeometry(QRect(149, 240, 351, 24));
         doctorsPB = new QPushButton(centralwidget);
         doctorsPB->setObjectName(QString::fromUtf8("doctorsPB"));
-        doctorsPB->setGeometry(QRect(149, 270, 351, 24));
+        doctorsPB->setGeometry(QRect(150, 240, 351, 24));
         servicesPB = new QPushButton(centralwidget);
         servicesPB->setObjectName(QString::fromUtf8("servicesPB"));
-        servicesPB->setGeometry(QRect(150, 300, 351, 24));
+        servicesPB->setGeometry(QRect(150, 270, 351, 24));
         welcomeLabel = new QLabel(centralwidget);
         welcomeLabel->setObjectName(QString::fromUtf8("welcomeLabel"));
         welcomeLabel->setGeometry(QRect(210, 50, 211, 51));
@@ -85,7 +81,6 @@ public:
         mainwindow->setWindowTitle(QCoreApplication::translate("mainwindow", "mainwindow", nullptr));
         registerPB->setText(QCoreApplication::translate("mainwindow", "\330\253\330\250\330\252 \331\206\330\247\331\205", nullptr));
         loginPB->setText(QCoreApplication::translate("mainwindow", "\331\210\330\261\331\210\330\257", nullptr));
-        teachingPB->setText(QCoreApplication::translate("mainwindow", "\330\242\331\205\331\210\330\262\330\264", nullptr));
         doctorsPB->setText(QCoreApplication::translate("mainwindow", "\331\276\330\262\330\264\332\251\330\247\331\206", nullptr));
         servicesPB->setText(QCoreApplication::translate("mainwindow", "\330\247\331\205\332\251\330\247\331\206\330\247\330\252 \331\210 \330\256\330\257\331\205\330\247\330\252 \330\250\333\214\331\205\330\247\330\261\330\263\330\252\330\247\331\206", nullptr));
         welcomeLabel->setText(QCoreApplication::translate("mainwindow", "\330\250\331\207 \330\263\330\247\331\205\330\247\331\206\331\207 \333\214 \330\250\333\214\331\205\330\247\330\261\330\263\330\252\330\247\331\206 \330\256\331\210\330\264 \330\242\331\205\330\257\333\214\330\257", nullptr));

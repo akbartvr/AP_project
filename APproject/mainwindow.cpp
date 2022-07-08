@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "dialog_login.h"
+#include "doctors.h"
 #include "registeration_form.h"
 #include "ui_mainwindow.h"
 #include "learningsection.h"
@@ -11,13 +12,12 @@ mainwindow::mainwindow(QWidget *parent)
 {
 
     ui->setupUi(this);
-    this->setStyleSheet("background-color: forestgreen;");
-    ui->welcomeLabel->setStyleSheet("QLabel { color : lawngreen; }");
-    ui->registerPB->setStyleSheet("QPushButton { background-color: teal ; color : lawngreen; }");
-    ui->loginPB->setStyleSheet("QPushButton { background-color: teal ; color : lawngreen; }");
-    ui->teachingPB->setStyleSheet("QPushButton { background-color: teal ; color : lawngreen; }");
-    ui->doctorsPB->setStyleSheet("QPushButton { background-color: teal ; color : lawngreen; }");
-    ui->servicesPB->setStyleSheet("QPushButton { background-color: teal ; color : lawngreen; }");
+    this->setStyleSheet("background-color: midnightblue;");
+    ui->welcomeLabel->setStyleSheet("QLabel { color : goldenrod; }");
+    ui->registerPB->setStyleSheet("QPushButton { background-color: darkblue ; color : gold; }");
+    ui->loginPB->setStyleSheet("QPushButton { background-color: darkblue ; color : gold; }");
+    ui->doctorsPB->setStyleSheet("QPushButton { background-color: darkblue ; color : gold; }");
+    ui->servicesPB->setStyleSheet("QPushButton { background-color: darkblue ; color : gold; }");
 }
 
 
@@ -30,42 +30,22 @@ mainwindow::~mainwindow()
 
 
 
-/*void mainwindow::registerPB_clicked()
-{
-    Registery_form *rg = new Registery_form(this);
-    rg->show();
-}
-
-
-
-
-void mainwindow::loginPB_clicked()
-{
-    Dialog_Login *app=new Dialog_Login(this);
-    app->show();
-}*/
-
-
-
-
 
 void mainwindow::on_loginPB_clicked()
 {
-    Dialog_Login *app=new Dialog_Login(this);
-    app->show();
+    qDialogPtr = new Dialog_Login(this);
+    qDialogPtr->show();
 }
-
 
 void mainwindow::on_registerPB_clicked()
 {
-    Registery_form *rg = new Registery_form(this);
-    rg->show();
+    qDialogPtr = new Registery_form(this);
+    qDialogPtr->show();
 }
 
-
-void mainwindow::on_teachingPB_clicked()
+void mainwindow::on_doctorsPB_clicked()
 {
-    learningSection* learning=new learningSection(this);
-    learning->show();
+    qMainWindowPtr = new doctors();
+    qMainWindowPtr -> show();
 }
 

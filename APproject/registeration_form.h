@@ -1,6 +1,7 @@
 #ifndef REGISTERATION_FORM_H
 #define REGISTERATION_FORM_H
 
+#include <QMessageBox>
 #include <QDialog>
 #include <QWidget>
 #include<QGridLayout>
@@ -38,6 +39,9 @@ public:
     explicit Registery_form(QWidget *parent = nullptr);
     ~Registery_form();
 
+public slots:
+    void savePB_clicked();
+
 private:
 //    Ui::Registery_form *ui;
     QGroupBox *grb;
@@ -63,6 +67,7 @@ private:
     QPushButton *pbn1;
     QSpinBox *spb;
     QVBoxLayout *vbl;
+    QMessageBox *registerStatus;
 
 };
 

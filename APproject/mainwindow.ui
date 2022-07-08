@@ -40,24 +40,11 @@
      <string>ورود</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="teachingPB">
-    <property name="geometry">
-     <rect>
-      <x>149</x>
-      <y>240</y>
-      <width>351</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>آموزش</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="doctorsPB">
     <property name="geometry">
      <rect>
-      <x>149</x>
-      <y>270</y>
+      <x>150</x>
+      <y>240</y>
       <width>351</width>
       <height>24</height>
      </rect>
@@ -70,7 +57,7 @@
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>300</y>
+      <y>270</y>
       <width>351</width>
       <height>24</height>
      </rect>
