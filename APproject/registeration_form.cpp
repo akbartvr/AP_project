@@ -140,7 +140,7 @@ Registery_form::~Registery_form()
 
 void Registery_form::savePB_clicked()
 {
-    if(ledNumber->text() != NULL && ledUser->text() != NULL && ledPass->text() != NULL && ledPassrp != NULL && ledName->text() != NULL && ledEmail->text() != NULL && ledNcode->text() != NULL){
+    if(ledNumber->text() != nullptr && ledUser->text() != nullptr && ledPass->text() != nullptr && ledPassrp != nullptr && ledName->text() != nullptr && ledEmail->text() != nullptr && ledNcode->text() != nullptr){
         if((ledPass->text()) != (ledPassrp->text()))
         {
             QMessageBox::critical(this,"error","password and its repeatation are not same!",QMessageBox::Ok);
