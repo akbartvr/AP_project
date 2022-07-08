@@ -14,85 +14,116 @@
    <string>mainwindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="registerPB">
-    <property name="geometry">
-     <rect>
-      <x>149</x>
-      <y>180</y>
-      <width>351</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>ثبت نام</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="loginPB">
-    <property name="geometry">
-     <rect>
-      <x>149</x>
-      <y>210</y>
-      <width>351</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>ورود</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="doctorsPB">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>240</y>
-      <width>351</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>پزشکان</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="servicesPB">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>270</y>
-      <width>351</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>امکانات و خدمات بیمارستان</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="welcomeLabel">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>50</y>
-      <width>211</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>به سامانه ی بیمارستان خوش آمدید</string>
-    </property>
-    <property name="scaledContents">
-     <bool>false</bool>
-    </property>
-    <property name="margin">
-     <number>0</number>
-    </property>
-    <property name="indent">
-     <number>0</number>
-    </property>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <spacer name="verticalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="welcomeLabel">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>به سامانه ی بیمارستان خوش آمدید</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <property name="indent">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="registerPB">
+        <property name="text">
+         <string>ثبت نام</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="loginPB">
+        <property name="text">
+         <string>ورود</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="doctorsPB">
+        <property name="text">
+         <string>پزشکان</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="servicesPB">
+        <property name="text">
+         <string>امکانات و خدمات بیمارستان</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
